@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+
+:root {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 10px;
+    --color-green: #29A71E;
+    --color-blue: #3675B0;
+    --color-red: #E13535;
+}
+
+body {
+    font-size: 1.4rem;
+}
+
+.card-wrap {
+    display: grid;
+    grid-template-columns: 25rem repeat(2, 19rem);
+    grid-template-rows: 11.7rem 10rem 4.5rem 9rem;
+    justify-content: center;
+    gap: 2rem;
+    width: 70rem;
+    margin: 0 auto;
+    background-color: #FFB084;
+    padding: 4rem;
+    border-radius: 2rem;
+}
+
+.card-wrap p {
+    padding-left: 2rem;
+}
+
+.card-wrap div:nth-child(6) p:first-of-type {
+    font-weight: 700;
+}
+
+.card-user {
+    align-self: baseline;
+}
+
+.card-user > p:first-of-type {
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-align: center;
+    padding-left: 0;
+}
+
+.card-user-info span {
+    font-weight: 600;
+}
+
+.card-user-info {
+    line-height: .15rem;
+}
+
+.card-user-info > p {
+    float: left;
+}
+
+.img {
+    text-align: center;
+}
+
+.card-wrap > div {
+    background-color: #FFFFFF;
+    border-radius: 2.5rem;
+    box-shadow: 7px 7px;
+}
+
+.card-wrap div:nth-child(2) p:first-of-type {
+    font-weight: 700;
+}
+
+.card-wrap div:first-of-type {
+    grid-row: 1/4;
+    width: 25rem;
+}
+
+.card-wrap div:nth-child(2) {
+    grid-column: 2/4;
+}
+
+.card-wrap div:nth-child(4) {
+    grid-column: 3/4;
+    grid-row: 2/4;
+}
+
+.card-wrap div:nth-child(5) {
+    grid-column: 2/3;
+    grid-row: 3/5;
+}
+
+.card-wrap div:nth-child(6) {
+    grid-column: 3/4;
+}
+
+.card-wrap div:nth-child(6) p:nth-child(3) {
+    float: left;
+}
+
+.card-wrap div:nth-child(6) p:not(p:first-of-type) {
+    margin: 0;
+}
+
+.card-wrap div:nth-child(6) p:nth-child(4) {
+    float: left;
+}
+
+.card-wrap div:last-of-type {
+    grid-row: 4/5;
+}
+
+.card-wrap .green {
+    box-shadow: 7px 7px var(--color-green);
+}
+
+.green > p {
+    font-weight: 700;
+    color: var(--color-green);
+}
+
+.card-wrap .blue {
+    box-shadow: 7px 7px var(--color-blue);
+}
+
+.blue > p {
+    font-weight: 700;
+    color: var(--color-blue);
+}
+
+.card-wrap .red {
+    box-shadow: 7px 7px var(--color-red);
+}
+
+.red > p {
+    font-weight: 700;
+    color: var(--color-red);
+}
+
+.card-wrap > div:last-of-type {
+    align-self: end;
+    font-weight: 700;
+}
